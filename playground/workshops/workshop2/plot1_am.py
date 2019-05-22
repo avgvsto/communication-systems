@@ -2,8 +2,8 @@ import numpy
 import plotly.plotly
 import plotly.graph_objs as go
 
-from utils.am import amplitude_modulation
-from utils.math_utils import sinusoide
+from playground.utils.am import amplitude_modulation
+from playground.utils.math_utils import sinusoide
 
 
 Ac = 5  # 5V

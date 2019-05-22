@@ -1,6 +1,6 @@
 import pytest
 
-from workshop.utils.am import amplitude_modulation
+from playground.utils.am import amplitude_modulation
 
 
 TIME_ZERO = 0

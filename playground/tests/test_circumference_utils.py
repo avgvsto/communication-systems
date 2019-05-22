@@ -1,6 +1,6 @@
 import pytest
 
-from workshop.utils.math_utils import (
+from playground.utils.math_utils import (
     get_circumference_points_origin_zero,
     get_circumference_y,
     signal_vector,
