@@ -2,7 +2,7 @@ import numpy
 import plotly.plotly
 import plotly.graph_objs as go
 
-from utils.math_utils import sinusoide
+from playground.utils.math_utils import sinusoide
 
 
 frequency = 4

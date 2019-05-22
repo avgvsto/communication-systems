@@ -2,11 +2,11 @@ import numpy
 import plotly.plotly
 import plotly.graph_objs as go
 
-from utils.math_utils import (
+from playground.utils.math_utils import (
     get_circumference_points_origin_zero,
     signal_vector,
 )
-from utils.plot_utils import (
+from playground.utils.plot_utils import (
     get_scatter_from_circumference,
     get_scatter_from_vector,
 )
