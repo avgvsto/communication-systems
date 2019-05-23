@@ -7,7 +7,7 @@ from playground.utils.math_utils import sinusoide
 
 
 Ac = 5  # 5V
-Am = 5  # 5V
+Am = 6  # 6V
 Fc = 8  # 8Hz
 Fm = 0.4  # 0.4Hz
 
@@ -39,7 +39,7 @@ m_envelope_2 = go.Scatter(
 figure = go.Figure(
     data=[modulated, m_envelope, m_envelope_2, carrier],
     layout=go.Layout(
-        title='Overmodulation - modulation index > 100%',
+        title='Max modulation - modulation index 100%',
         xaxis={'title': 'time (s)'},
         yaxis={'title': 'A (V)'},
     ),
