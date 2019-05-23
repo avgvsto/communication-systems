@@ -39,7 +39,7 @@ m_envelope_2 = go.Scatter(
 figure = go.Figure(
     data=[modulated, m_envelope, m_envelope_2, carrier],
     layout=go.Layout(
-        title='Modulated amplitude',
+        title='Modulated amplitude - time domain',
         xaxis={'title': 'time (s)'},
         yaxis={'title': 'A (V)'},
     ),
