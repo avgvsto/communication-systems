@@ -39,7 +39,7 @@ m_envelope_2 = go.Scatter(
 figure = go.Figure(
     data=[modulated, m_envelope, m_envelope_2, carrier],
     layout=go.Layout(
-        title='Max modulation - modulation index > 100%',
+        title='Overmodulation - modulation index > 100%',
         xaxis={'title': 'time (s)'},
         yaxis={'title': 'A (V)'},
     ),
