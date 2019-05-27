@@ -28,11 +28,10 @@ y3 = sinusoide(amplitude3, frequency, time, phase3)
 # Resulting signal
 amplitude_r = y + y2 + y3
 
-signal_1 = go.Scatter(x=x, y=y, name='signal 1')
-signal_2 = go.Scatter(x=x, y=y2,  name='signal 2')
-signal_3 = go.Scatter(x=x, y=y3,  name='signal 3')
-signal_r = go.Scatter(x=x, y=amplitude_r,  name='resulting', line={'width': 4})
-
+signal_1 = go.Scatter(x=x, y=y, name='Signal 1 (A: 1V, Ph: 0º)')
+signal_2 = go.Scatter(x=x, y=y2,  name='Signal 2 (A: 2V, Ph: 90º)')
+signal_3 = go.Scatter(x=x, y=y3,  name='Signal 3 (A: 2V, Ph: 45º)')
+signal_r = go.Scatter(x=x, y=amplitude_r,  name='Resulting', line={'width': 4})
 data = [
     signal_1,
     signal_2,
@@ -40,8 +39,16 @@ data = [
     signal_r,
 ]
 
+figure = go.Figure(
+    data=data,
+    layout=go.Layout(
+        title='Sinoidal functions',
+        xaxis={'title': 'time (s)'},
+        yaxis={'title': 'A (V)'},
+    ),
+)
 plotly.offline.plot(
-    data,
+    figure,
     filename='plot_1_time_domain',
     auto_open=True,
 )
